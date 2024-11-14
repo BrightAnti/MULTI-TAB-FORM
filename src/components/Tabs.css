@@ -1,0 +1,25 @@
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+  padding-top: 15px;
+  background-color: white;
+  border-bottom: 1px solid silver;
+}
+
+.tab {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: blue;
+  text-decoration: none;
+}
+
+.tab.active {
+  background-color: #979a9c;
+  color: #fff;
+  border-bottom: none;
+}

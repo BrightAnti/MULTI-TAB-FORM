@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-start; /* Align everything to the top */
+  align-items: stretch; /* Stretch content to full width */
+  height: 100vh;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: hidden;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between form and footer */
+  flex-grow: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 10px;
+  transform: scale(1);
+}
+
+.form-content {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.checkbox-column {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.checkbox-column input[type="checkbox"] {
+  transform: scale(1.1);
+  margin-right: 2px;
+}
+
+.checkbox-column label {
+  font-size: 0.8em;
+}
+
+label {
+  font-size: 1em;
+  color: #333;
+  line-height: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  color: #333;
+}
+
+.home-address {
+  height: 50px;
+  width: 100%;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.upload-btn {
+  padding: 10px 15px;
+  font-size: 1em;
+  background-color: #4389a2;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  width: auto;
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.upload-btn input[type="file"] {
+  display: none;
+}
+
+.upload-btn svg {
+  margin-right: 6px;
+}
+
+.contact-info {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.contact-info legend {
+  font-weight: bold;
+  color: #2a5970;
+  padding: 0 8px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  position: relative;
+}
+
+.divider legend {
+  font-weight: bold;
+  padding: 0 8px;
+  background-color: #fff;
+  color: black;
+  font-family: serif;
+}
+
+.required {
+  color: red;
+}
+
+.react-international-phone-input-container {
+  height: 25px;
+  border: var(--bdTop-color);
+  border-radius: 4px 4px 4px 4px;
+}
+
+.react-international-phone-input {
+  border: none !important;
+}
+
+.react-international-phone-country-selector-button {
+  height: 25px !important;
+  border: nones !important;
+  margin-right: 2px !important;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .form-content {
+    flex-direction: column;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+/* Footer at the bottom */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+footer button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.box-1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px solid #ddd;
+  padding-right: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.box-2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.image-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 1px;
+  width: 40px;
+}
+
+.image-buttons button {
+  padding: 4px 8px;
+  background-color: #4caf50; /* Green color for primary button */
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-buttons button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-2px);
+}
+
+.image-buttons button:active {
+  transform: translateY(0px);
+}
+
+.image-buttons button:nth-child(2) {
+  background-color: #d9534f; /* Red color for 'Remove' button */
+}
+
+.image-buttons button:nth-child(2):hover {
+  background-color: #c9302c; /* Darker red on hover */
+}

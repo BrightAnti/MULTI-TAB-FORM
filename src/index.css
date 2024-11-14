@@ -1,0 +1,30 @@
+select:focus {
+  border-color: blue;
+  outline: none;
+  border-width: 2px;
+}
+input:focus {
+  border-color: blue;
+  outline: none;
+  border-width: 2px;
+  color: black;
+}
+input,
+select {
+  color: black;
+  font-size: 13px;
+}
+label {
+  font-size: 15px;
+}
+.input-with-placeholder::placeholder {
+  text-align: left; /* Aligns the placeholder to the start (left) */
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  text-align: right;
+}
